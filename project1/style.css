@@ -1,0 +1,53 @@
+body {
+  font-family: system-ui, sans-serif;
+  text-align: center;
+}
+
+ nav {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px 0;
+            margin-bottom: 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        nav a {
+           
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+
+  padding: 8px 20px;          
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+
+        }
+
+       nav a:hover{
+        background-color: rgba(0, 0, 0, 0.15);
+        color: rgb(255, 247, 0);
+       }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#grey { background: grey; }
+#white { background: white; }
+#blue { background: blue; }
+#yellow { background: yellow; }
+#green { background: green; }
