@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HOME FOR JAVASCRIPT PROJECTS</title>
+</head>
+    <nav>
+        <a href="/javascriptprojects/projecthome.html" aria-current="page">HOME</a>
+    </nav>
+<body>
+    <div class="redirect">
+        <button class="project" data-page="project1/index.html">COLOR CHANGER</button><br/>    
+        <button class="project" data-page="project2/index.html">BMI EVALUATOR</button><br/> 
+        <button class="project" data-page="project3/index.html">DIGITAL CLOCK</button><br/> 
+        <button class="project" data-page="project4/index.html">GUESS THE NUMBER</button>
+    </div>
+    <script >
+        const p=document.querySelectorAll('.project')
+        p.forEach(function(buttons){
+            buttons.addEventListener('click',function(){
+                window.location.href=buttons.dataset.page;
+    });
+});
+    </script>
+</body>
+</html>
